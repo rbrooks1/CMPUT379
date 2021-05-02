@@ -1,0 +1,12 @@
+Name: Ryan Brooks
+ID: 1530605
+
+notes and assumptions:
+I was not able to get tands.c and prodcon.cpp to link properly so I just added the code
+from tands.c to my prodcon.cpp file without changing any of the code in tands.c
+
+sometimes the end of the printing to log file may not work and the code will get stuck in a loop
+if this happens please just rerun the code.  it should fix the issue
+
+sometimes some of the print statements may look not like what is expected.  I was not able to fix
+this issue.  Please rerun the code and it should fix the issue.

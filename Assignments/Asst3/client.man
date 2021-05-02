@@ -1,0 +1,26 @@
+.TH Client 1 "March 29, 2020"
+.SH NAME
+client - run a client to connect to a server and provide work for said server
+.SH SYNOPSIS
+.B ./client [port number] [ip address]
+.SH DESCRIPTION
+connects to the server running on machine with
+.U ip address
+and sends information across
+.U port number
+to the server for the server to handle.
+.SH ERRORS
+.SS Port Number
+The client will exit if no port number is given or if the
+specified port number is smaller then 5000 or greater then 64000
+.SS Connection Errors
+If the socket could not be created or the connection to the server failed then the
+client will exit.  The client will also exit if the inet_pton function fails.
+.SS
+.SH NOTES
+The client can receive information from either the terminal or a file
+.SH BUGS
+sometimes the server and client get hung up randomly.  If this happens simply rerun the code
+or re compile the code and then rereun the code.
+.SH SEE ALSO
+server

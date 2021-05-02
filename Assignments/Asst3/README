@@ -1,0 +1,18 @@
+Name: Ryan Brooks
+ID: 1530605
+Assignment: CMPUT379 Assignment 3 server-client code
+
+running instructions:
+See man pages for instructions on how to run.
+
+Notes and Assumptions:
+I was not able to get tands.c to work as a seperate file so I put the Trans function in the server
+code and the Sleep function in the client code, but I also added a line of code to add to TransSave
+in the client code.
+The server must be run in the same terminal as the terminal in which you compiled your code or
+the server and client will get hung up on the first piece of work sent from the client to the server.
+This hangup may also occur if the client is run to late after the server is started (I'm honestly not sure
+why this happens).  If this issue occurs simply try rerunning the server and client or try recompiling
+the code with the given makefile.
+To use the man pages developed for this assignment simply run the command groff -Tascii -man <server/client>.man | more
+and to exit the man page simply hit the q key on your keyboard.

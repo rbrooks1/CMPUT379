@@ -1,0 +1,24 @@
+.TH Server 1 "March 29, 2020"
+.SH NAME
+server - run a basic webserver to process client requests
+.SH SYNOPSIS
+.B ./server [port number]
+.SH DESCRIPTION
+sets up a server using the
+.U port number
+selected.  This server can take requests from clients (see man client)
+for more information on the client
+.SH ERRORS
+if no port number is given the program will exit
+if the port number specified is not within the range of 5000 to 64000 the server will exit
+and ask for a new port number in the specified range
+.SH NOTES
+This server only serves one client at a time, but can serve multiple clients back to back
+The server will time out if no new connection is made after 60 seconds of serving a client
+.SH BUGS
+the only bug happens with running the server and client together.  The server needs to run in the
+same terminal wherethe code was compiled and the client can't be run to late after the server is run
+Also sometimes the server and client get hung up randomly.  If this happens simply rerun the code
+or re compile the code and then rereun the code.
+.SH SEE ALSO
+client
